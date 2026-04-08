@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부천시일쉼지원센터 - 임산부 프리패스</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 -->
+        <header class="main-header">
+            <div class="logo-section">
+                <div class="foundation-logo">
+                    <img src="logo.png" alt="부천시일쉼지원센터" class="logo-img">
+                    <div class="logo-text">
+                        <small>부천여성청소년재단</small>
+                        <strong>부천시일쉼지원센터</strong>
+                    </div>
+                </div>
+            </div>
+            <h1>맘편한 임산부<br><span class="highlight">우선 이용</span> 프로그램</h1>
+            <p class="subtitle">증진강좌 프리패스 신청 시스템</p>
+        </header>
+
+        <!-- 메인 입력 -->
+        <main>
+            <div class="input-card">
+                <div class="card-header">
+                    <span class="badge">STEP 1</span>
+                    <h2>출산일을 입력해주세요</h2>
+                    <p class="desc">산후 100일~1년 감정노동자 대상</p>
+                </div>
+
+                <div class="date-input-group">
+                    <label>출산일</label>
+                    <input type="date" id="birthDate" class="date-input">
+                </div>
+
+                <div id="calculated-info" class="calculated-info hidden">
+                    <div class="status-message" id="statusMessage"></div>
+                </div>
+            </div>
+
+            <!-- 프로그램 버튼 목록 -->
+            <div id="program-buttons" class="program-buttons hidden">
+                <h3 class="section-title">📚 참여 가능한 프로그램</h3>
+                <div class="buttons-grid" id="buttonsContainer">
+                    <!-- JavaScript로 생성 -->
+                </div>
+            </div>
+
+            <!-- 안내사항 -->
+            <div class="info-section">
+                <h3>📋 프리패스 안내</h3>
+                <ul class="info-list">
+                    <li>정원의 <strong>10%(2명)</strong>를 임산부 프리패스로 배정</li>
+                    <li><strong>선착순</strong>으로 접수됩니다</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 부천시일쉼지원센터</p>
+        </footer>
+    </div>
+
+    <!-- 상세 정보 모달 -->
+    <div id="detail-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">✕</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
