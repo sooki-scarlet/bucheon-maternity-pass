@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부천시일쉼지원센터 - 임산부 프리패스</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 -->
+        <header class="main-header">
+            <div class="logo-section">
+                <div class="foundation-logo">
+                    <span class="logo-icon">🌸</span>
+                    <div class="logo-text">
+                        <small>부천여성청소년재단</small>
+                        <strong>부천시일쉼지원센터</strong>
+                    </div>
+                </div>
+            </div>
+            <h1>맘편한 임산부<br><span class="highlight">우선 이용</span> 프로그램</h1>
+            <p class="subtitle">감정노동자의 신체적 회복과 건강관리역량 증진을 위한<br>임산부 프리패스 신청 시스템</p>
+        </header>
+
+        <!-- 메인 입력 -->
+        <main>
+            <div class="input-card">
+                <div class="card-header">
+                    <span class="badge">STEP 1</span>
+                    <h2>출산일을 입력해주세요</h2>
+                    <p class="desc">산후 100일이후 참여를 원칙으로 합니다</p>
+                </div>
+
+                <div class="date-input-group">
+                    <label>출산일 (출산한 날짜)</label>
+                    <input type="date" id="birthDate" class="date-input">
+                    <span class="input-icon">📅</span>
+                </div>
+
+                <div id="calculated-info" class="calculated-info hidden">
+                    <div class="info-box">
+                        <span class="label">현재 기준 경과일</span>
+                        <span class="value" id="elapsedDays">-</span>
+                    </div>
+                    <div class="status-message" id="statusMessage"></div>
+                </div>
+
+                <button onclick="findPrograms()" class="btn-primary" id="submitBtn" disabled>
+                    <span>프로그램 찾기</span>
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+
+            <!-- 안내사항 -->
+            <div class="info-section">
+                <h3>📋 프리패스 안내</h3>
+                <ul class="info-list">
+                    <li>증진강좌 정원의 <strong>10%(2명)</strong>를 임산부 프리패스로 배정</li>
+                    <li>산후 <strong>100일~1년</strong> 감정노동자 대상</li>
+                    <li>선착순으로 접수됩니다</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 부천여성청소년재단 부천시일쉼지원센터</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
