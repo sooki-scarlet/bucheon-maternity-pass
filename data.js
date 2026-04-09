@@ -3,16 +3,16 @@ const programs = [
         id: 1,
         institution: "부천시일쉼지원센터",
         category: "증진강좌",
-        name: "SNPE 바른자세 척추운동",
+        name: "SNPE 바른자세 척추운동 1부",
         part: "1부",
-        target: "산후 100일~1년 감정노동자",
+        target: "산후 100일~1년 이내 감정노동자",
         targetType: "postpartum",
         minDays: 100,
         maxDays: 365,
         schedule: {
             days: "매주 수요일",
             time: "18:50-19:40",
-            period: "5월~7월"
+            period: "5월~8월"
         },
         freePass: {
             ratio: "10%",
@@ -32,14 +32,14 @@ const programs = [
         category: "증진강좌",
         name: "SNPE 바른자세 척추운동",
         part: "2부",
-        target: "산후 100일~1년 감정노동자",
+        target: "산후 100일~1년 이내 감정노동자",
         targetType: "postpartum",
         minDays: 100,
         maxDays: 365,
         schedule: {
             days: "매주 수요일",
             time: "19:50-20:40",
-            period: "5월~7월"
+            period: "5월~8월"
         },
         freePass: {
             ratio: "10%",
@@ -59,14 +59,14 @@ const programs = [
         category: "증진강좌",
         name: "아사나를 통한 교정 및 통증 완화",
         part: null,
-        target: "산후 100일~1년 감정노동자",
+        target: "산후 100일~1년 이내 감정노동자",
         targetType: "postpartum",
         minDays: 100,
         maxDays: 365,
         schedule: {
             days: "매주 목요일",
-            time: "시간 미정",
-            period: "5월~7월"
+            time: "18:50-20:10",
+            period: "5월~8월"
         },
         freePass: {
             ratio: "10%",
@@ -91,9 +91,9 @@ const programs = [
         minDays: 100,
         maxDays: 365,
         schedule: {
-            days: "매주 목요일",
-            time: "시간 미정",
-            period: "5월~7월"
+            days: "매주 토요일",
+            time: "9:30-10:20",
+            period: "5월~8월"
         },
         freePass: {
             ratio: "10%",
@@ -113,14 +113,14 @@ const programs = [
         category: "증진강좌",
         name: "코어&근력강화 소도구 필라테스",
         part: "2부",
-        target: "산후 100일~1년 감정노동자",
+        target: "산후 100일~1년 이내 감정노동자",
         targetType: "postpartum",
         minDays: 100,
         maxDays: 365,
         schedule: {
-            days: "매주 목요일",
-            time: "시간 미정",
-            period: "5월~7월"
+            days: "매주 토요일",
+            time: "10:30-11:20",
+            period: "5월~8월"
         },
         freePass: {
             ratio: "10%",
@@ -139,7 +139,7 @@ const programs = [
 const institutionInfo = {
     name: "부천시일쉼지원센터",
     parent: "부천여성청소년재단",
-    phone: "032-XXX-XXXX",
+    phone: "032-323-1203",
     address: "부천시 원미구 소사로 123",
     website: "https://www.bcilshim.or.kr"
 };
